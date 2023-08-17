@@ -1,0 +1,33 @@
+
+
+Java 1.2                    Java 5                      Java 8
+
+Loops                      Loops                        Loops
+Iterators                  Iterators                    Iterators
+
+                           Iterable                     Iterable
+                           fpr-each Loop                for-each Loop
+
+                                                        Streams
+
+
+
+Loops
+    for
+    while
+    do-while
+    for each
+
+
+
+Iteration Methods
+Iterable                    Iterable Interface                                              Iterator<E> Interface
+                            void foreach(Consumer <T>)                                      void forEachRemaining(Consumer<T> action)
+                            Iterator<E> iterator()                                          boolean hasNext()
+                            Spliterator<E> spliterator()                                    E next()
+                                                                                            void remove()
+
+
+Collection                  Collection Interface
+                            Stream<E> stream()
+                            Stream<E> parallelStream()

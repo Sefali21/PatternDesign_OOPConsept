@@ -1,0 +1,37 @@
+**interface'lerdeki methodlar childlar tarafindan override edilmelidir.
+**interface icinde variable sadece public static ve final olmak zorundadir
+    public static final int sayi=1;
+    static final int sayi=1;
+    final int sayi=1;
+    int sayi=1;
+    yukarida declare edilen tüm variabler esittir ve aynidir. illa public static ve final
+    yazilmasina gerek yoktur.
+    static: proje icinden rahatlikla ulasilabilir
+    final degistirilemez ve mutlaka deger atanmalidir
+
+    private ve protected variable atanamaz
+    sadece constant olmalidir
+
+**interface icinde ki method() abstract body ihtiyac duymaz
+    abstract void print();
+    void print()
+    methodlari arasinda hicbir fark yoktur. Java her ikisinide
+    abstract method () olarak kabul eder.
+
+
+**default ya da static bir method olusturlursa child class bunlari inplement etmek
+zorunda degildir. Ihtiyac duyulan methodlardan implement edilebilir.(Override)
+
+    default void method1(){ };
+    static void method1 (){ };
+
+    -default ve static ile body olan method() olusturulabilir.
+
+    -body olmasi concrete method oldugu anlamina gelmez. hala daha
+    ilgili method abstract olarak kabul edilir.
+
+    methodlarin basina public konulmasina gerek yoktur zati her biri java
+    tarafindan public olarak kabul edilir.
+
+
+

@@ -1,0 +1,8 @@
+**all abstract class muss implement
+**abstract yazilmasi yeterlidir
+**abstract class disinda kalan class
+**abstract class can have constructors but cant be instantiated (obje üretilemez)
+**abstract method dont need any body
+**abstract class can have any kind of methods without abstract keyword
+**a method() cannot have at the same time abstract and static
+**a abstract method() can not be final, because it should be override, otherwise with final cannot be

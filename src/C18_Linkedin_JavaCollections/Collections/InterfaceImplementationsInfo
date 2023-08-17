@@ -1,0 +1,112 @@
+
+
+                                   C18_Linkedin_JavaCollections.Collections
+                                        |
+                                        |
+             ___________________________|__________________________________
+             |                          |                                 |
+             |                          |                                 |
+             List                     Queue                              Set                        Map
+             .                          |                                 |.......
+             .                          |        Priority Queue           |      .                      HashMap
+             .                        Deque                               |      .                      LinkedHashMap
+        Array List                      .    .                            |     Hash Set
+             .                          .    .                            |     LinkedHashSet
+        Vector ............... Linked List   Array Deque             SortedSet
+            |                                                           .
+        Stack                                                        TreeSet
+
+
+
+
+
+
+             Implementation  -------------> (extends)
+             Interface       ............ >  (Implements)
+
+
+             <Implementation Style>   <Interface>
+             ArrayList       HashMap     LinkedHashMap
+
+
+
+        |----------------------------------------------------------------------------------------------|
+        |         |  Hashing  |    Array   |   Tree    |   Linked Based    |   Hash and Linked Based   |
+        |---------|-----------|------------|-----------|-------------------|---------------------------|
+        | Set     |  HashSet  |            |  TreeSet  |                   |   LinkedHashSet           |
+        | --------|-----------|------------|-----------|-------------------|---------------------------|
+        | List    |           |  ArrayList |           |    LinkedList     |                           |
+        | --------|-----------|------------|-----------|-------------------|---------------------------|
+        | Deque   |           | ArrayDeque |           |    LinkedList     |                           |
+        | --------|-----------|------------|-----------|-------------------|---------------------------|
+        | Map     |  HashMap  |            |  TreeMap  |                   |    LinkedHashMap          |
+        | --------|-----------|------------|-----------|-------------------|---------------------------|
+
+        Collection <String> c = new ArrayList<>();
+
+        c.add("A");                                                           //  boolean
+        c.addAll(List.of("A","B","C"));                                      //   boolean
+        c.remove("C");                                                      //    boolean
+        c.removeAll(List.of("A","B","C"));                                 //     boolean
+
+        c.clear()                                                        //       void   remove all elements
+        c.retainAll(List.of("A","B","C"));                              //        boolean remove collection elements not found in the provided collection
+                                                                       //         A, B, C disindaki hepsini siler
+
+        c.contains("C");                                              //          boolean
+        c.containAll(List.of("A","B","C"));                          //           boolean
+
+        c.isEmpty();
+        c.size();
+
+
+        Iterate C18_Linkedin_JavaCollections.Collections
+        -void forEach(Consumer <T> a)
+        -Iterator <E> iterator ()
+        -Stream <E> parallelStream()
+        -Spliterator <E> spliterator ()
+        -Stream <E> stream()
+
+        Miscellaneous
+        -boolean equals (Object o)
+        -int hashCode ()
+        -Object [] toArray ()
+        -T [] toArray (IntFunction <T []> g)
+        -T [] toArray (T [] )
+
+
+        Insert Elements
+        -boolean add (E e)
+        -boolean addAll(Collection <? extends E> e)
+
+        Remove Elements
+        -void clear()
+        -boolean remove (Object o)
+        -boolean removeAll( Collection <?> c)
+        -boolean removeIf ( Predicate <? super E> f)
+        -boolean retainAll (Collection <?> c)
+
+        Inspect Collection
+        -boolean contains (Object o)
+        -boolean containAll (Collection <?> c)
+        -boolean isEmpty ()
+        -int size ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
